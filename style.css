@@ -37,11 +37,6 @@ header {
 /* Ad Left & Right */
 .ad-left,
 .ad-right {
-  width: 160px;
-  min-height: 600px;
-  background: #fff;
-  border: 1px solid #ccc;
-  padding: 10px;
   flex-shrink: 0;
 }
 
