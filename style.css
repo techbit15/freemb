@@ -1,0 +1,153 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.main-content {
+  flex: 1;
+  max-width: 600px;
+  width: 100%;
+
+}
+
+/* Ad Left & Right */
+.ad-left,
+.ad-right {
+  width: 160px;
+  min-height: 600px;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  flex-shrink: 0;
+}
+
+/* Logo Row */
+.logo-row {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.logo-row img {
+  height: 50px;
+  object-fit: contain;
+}
+
+/* Steps */
+.steps-box {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 1 1 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.steps-box h2 {
+  margin-bottom: 15px;
+}
+
+.steps-box ol {
+  list-style-position: inside;
+  text-align: left;
+}
+
+/* Share Box */
+.share-box {
+  background: #e6ffe6;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.facebook-share {
+  display: inline-block;
+  background-color: #4267B2;
+  color: #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.copy-button {
+  background-color: #28a745;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.copy-button:hover {
+  background-color: #218838;
+}
+
+#ad-bottom {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .ad-left,
+  .ad-right {
+    display: none;
+  }
+
+  .logo-row {
+    justify-content: center;
+  }
+
+  .steps-box {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .facebook-share,
+  .copy-button {
+    display: block;
+    width: 100%;
+    margin: 8px 0;
+  }
+}
